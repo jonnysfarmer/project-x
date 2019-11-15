@@ -1,1 +1,81 @@
+.column {
+  border: 1px solid black;
+  h2{
+    text-emphasis: bold;
+    font-size: 20px;
+    text-align: center;
+  }
+  p{
+    font-size: 14px;
+  }
+  h4{
+    font-size: 16px;
+  }
+}
+.columns {
+  margin-top: 0px;
+}
+#hero-background{
+  background-image: url('https://www.brewdog.com/media/gene-cms/p/u/punk_rhs_330ml_3x_can_wide_1.jpg');
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#hero-text{
+  padding: 10px;
+  margin: 0px;
+  background-color: rgba(0,0,0, 0.5);
+  color: black;
+  max-width: 100%;
+  h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 64px;
+    letter-spacing: 5px;
+    
+  }
+  h2{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 38px;
+    letter-spacing: 2px;
 
+  }
+}
+.is-horizontal-center {
+  display: flex;
+  justify-content: center;
+}
+.nav1{
+  display: flex;
+  justify-content: center;
+  li {
+
+    padding: 10px 20px;
+  }
+}
+.beers{
+
+  h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 58px;
+    letter-spacing: 3px;
+    color: black;
+    text-align: center;
+  }
+  h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: black;
+    text-align: center;
+  }
+  input {
+    width: 200px;
+    height: 20px;
+
+  }
+  .inputBox {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+}
