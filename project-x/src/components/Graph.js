@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React, { PureComponent, useState, useEffect } from 'react';
 import {
   BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
 } from 'recharts';
@@ -24,30 +24,53 @@ const data = [
   },
 ];
 
-class Graph  extends PureComponent {
+const Graph = (props) => {
   // static jsfiddleUrl = 'https://jsfiddle.net/alidingling/30763kr7/';
+  const pete = props.name
 
-  render() {
+  if (!props) {
+    console.log(props)
+    console.log('loading')
+    return <div>Loading</div>
+  } else {
+    console.log(props)
+    const data2 = (data2)=>{
+      const dataarray = data2.ingredients.malt.map((ele) =>{
+        return (
+          {
+            name: ele.name,
+            Amount: ele.amount.value
+          }
+        )
+      })
+      return dataarray
+    }
+    data2(props.data2)
+    
+
+
+
     return (
       <BarChart
         width={500}
         height={300}
-        data={data}
+        data={data2(props.data2)}
         margin={{
-          top: 5, right: 30, left: 20, bottom: 5,
+          top: 5, right: 30, left: 20, bottom: 5
         }}
       >
-       
+
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="name" />
         <YAxis />
         <Tooltip />
         <Legend />
-        <Bar dataKey="pv" fill="#00B1DE" />
+        <Bar dataKey="Amount" fill="#00B1DE" />
         {/* <Bar dataKey="uv" fill="#82ca9d" /> */}
       </BarChart>
-    );
+    )
   }
+
 }
 
 export default Graph

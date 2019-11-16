@@ -27,15 +27,15 @@ const Beers = () => {
   }
   const Display = () => {
     if (filterBeer.length > 10) {
-      return <li>Please Search for your Beer</li>
+      return <li className='beerList'> Please Search for your Beer</li>
     } else if (filterBeer.length < 10 && filterBeer.length > 1) {
       return filterBeer.map((ele, i) => {
-        return <li key={i} onClick={(e) => onClick(e, ele)}>{ele.name}</li>
+        return <li key={i} className='beerList'>{ele.name}</li>
       })
     } else if (filterBeer.length === 1) {
       return (
         <div className="columns">
-          <div className="column is-horizontal-center">
+          <div className="column is-horizontal-center" id="leftborder">
             <img src={filterBeer[0].image_url} alt="flag" height="100" width="100"></img>
           </div>
           <div className="column">
@@ -60,7 +60,7 @@ const Beers = () => {
 
       )
     } else {
-      return <li>There are no beers matching your results</li>
+      return <li className='beerList'>Please filter results</li>
     }
   }
 
