@@ -49,8 +49,10 @@
   justify-content: center;
 }
 .nav1{
+  width: 100%;
   display: flex;
   justify-content: center;
+  max-height: 10%;
   li {
     font-family: 'Bebas Neue', cursive;
     font-size: 22px;

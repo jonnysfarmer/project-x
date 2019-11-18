@@ -3,7 +3,7 @@ import React from 'react'
 const Home = () => {
 
   return (
-    <section className="hero is-fullheight is-link" id='hero-background'>
+    <section className="hero is-fullheight-with-navbar is-link" id='hero-background'>
       <div className="hero-body">
         <div className="container has-text-centered" id='hero-text'>
           <h1 className="title">Beer</h1>
