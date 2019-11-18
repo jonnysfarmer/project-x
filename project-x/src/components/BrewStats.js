@@ -38,7 +38,7 @@ const BrewStats = () => {
       return (
         <div className="columns is-desktop">
           <div className="column is-horizontal-center" id="leftborder">
-            <img src={filterBeer[0].image_url} alt="flag" height="100" width="100"></img>
+            <img src={filterBeer[0].image_url} alt="flag" height="100" ></img>
           </div>
           <div className="column">
             <h2>{filterBeer[0].name}</h2>
