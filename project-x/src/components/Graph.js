@@ -56,7 +56,7 @@ const Graph = (props) => {
         height={300}
         data={data2(props.data2)}
         margin={{
-          top: 5, right: 30, left: 20, bottom: 5
+          top: 5, right: 20, left: 10, bottom: 5
         }}
       >
 
