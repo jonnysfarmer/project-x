@@ -34,7 +34,7 @@ const Beers = () => {
       })
     } else if (filterBeer.length === 1) {
       return (
-        <div className="columns">
+        <div className="columns is-desktop">
           <div className="column is-horizontal-center" id="leftborder">
             <img src={filterBeer[0].image_url} alt="flag" height="100" width="100"></img>
           </div>
