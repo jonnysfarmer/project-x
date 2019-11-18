@@ -17,6 +17,9 @@
 }
 #leftborder{
   border-left: 33px solid #00B1DE;
+  img{
+    max-height: 100%;
+  }
 
 }
 #hero-background{
@@ -52,7 +55,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  max-height: 10%;
+  // max-height: 10%;
   li {
     font-family: 'Bebas Neue', cursive;
     font-size: 22px;

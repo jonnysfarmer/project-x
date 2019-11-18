@@ -23,7 +23,7 @@ class App extends React.Component {
           <div>
             <ul className='nav1'>
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/project-x/">Home</Link>
               </li>
               <li>
                 <Link to="/beers">Beers</Link>
@@ -35,7 +35,7 @@ class App extends React.Component {
 
 
             <Switch>
-              <Route exact path="/">
+              <Route exact path="/project-x/">
                 <Home />
               </Route>
               <Route path="/beers">
