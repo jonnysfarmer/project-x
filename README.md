@@ -5,6 +5,8 @@ I choose to use a Brewdog (craft beer) API and to and give you the ability to se
 
 Launch on [GitHub Pages](https://jonnysfarmer.github.io/project-x/).  Check out the GitHub [Repo](https://github.com/jonnysfarmer/project-x)
 
+![Front-page](project-x/images/beers.gif)
+
 ## Technologies used
 * React
 * Webpack
